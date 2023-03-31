@@ -1,0 +1,37 @@
+[
+  {
+    "id": "6425df9e67b68001eb0f6a6d",
+    "title": "How to get your first job as a self-taught programmer",
+    "Coverpicture": "https://img.freepik.com/premium-photo/futuristic-robot-artificial-intelligence-enlightening-ai-technology-concept_31965-39373.jpg?w=1060",
+    
+    "readtime": 5,
+    "authorname": "Mr.Raju",
+    "authorpicture": "https://img.freepik.com/free-photo/portrait-man-with-glasses-blue-suit-with-tie-lights-with-blurry-background_181624-17456.jpg?w=996&t=st=1680205099~exp=1680205699~hmac=677ff2079e872f10088ce60d338b95505548f25fd7ebd6b8f407ef955bf5d033"
+  },
+  {
+    "id": "6425df9ee98842c1c6dcd73e",
+    "title": "Mastering Python: Tips and Tricks for Programmers",
+    "Coverpicture": "https://img.freepik.com/free-photo/asian-young-male-wearing-wearable-goggle-headset-virtual-online-meeting-digital-space-working-with-3d-augmented-dimension-homecyber-virtual-working-with-virtual-vr-goggle-pc-desktop-device_609648-2614.jpg?t=st=1680204885~exp=1680205485~hmac=cf331ba956afabed78affcc0e49e47d0d0bd4ccbc44a280f7f747c67cfca9304",
+   
+    "readtime": 10,
+    "authorname": "Valeria Daugherty",
+    "authorpicture": "https://img.freepik.com/free-photo/business-man-curly-cute-handsome-guy-black-suit-close-up-smiling_140725-162638.jpg?w=996&t=st=1680205010~exp=1680205610~hmac=9b68d32dce4e69d3b4a08ef7b15c83566254e6195100ca7b5e7fc928e41accb9"
+  },
+  {
+    "id": "6425df9e6530aa4292f6f0cb",
+    "title": "Leveling Up Your Coding Skills: Advanced Techniques for Programmers",
+    "Coverpicture": "https://img.freepik.com/free-photo/modern-technology-trending-innovation-concept_53876-21317.jpg?w=1380&t=st=1680194985~exp=1680195585~hmac=59cb109068659e20736b64b048a5d20b2de1bcdc3f4504cb37621b3f18dae944",
+    "readtime": 12,
+    "authorname": "Church Moss",
+    "authorpicture": "https://img.freepik.com/free-photo/front-view-young-businessman-office-clothing_23-2148763859.jpg?t=st=1680205170~exp=1680205770~hmac=b7734b63462a0b3daf71bb6c1ba3591244e8929b4db5b645ffafb768ffceec6e"
+  },
+  {
+    "id": "6425df9eb038db64d4c03ee3",
+    "title": "Efficient Data Structures: Boosting Your Programming Performance",
+    "Coverpicture": "https://img.freepik.com/free-photo/double-exposure-caucasian-man-virtual-reality-vr-headset-is-presumably-gamer-hacker-cracking-code-into-secure-network-server-with-lines-code_146671-18914.jpg?w=996&t=st=1680204592~exp=1680205192~hmac=e2bd108d17b18a06f8843774c9a479f806dd84b0c0d3e12a00b0ba291a311385",
+    "readtime": 20,
+    "authorname": "Burton Terrell",
+    "authorpicture": "https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?w=996&t=st=1680205252~exp=1680205852~hmac=c84f83929a2caa80daa458efabc9885a296f23eb84c1d144abda196552008ce2"
+  }
+  
+]

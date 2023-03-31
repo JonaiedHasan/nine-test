@@ -1,34 +1,40 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './component/Header/Header';
+import Home from './component/Home/Home';
+import SideCart from './component/SideCart/SideCart';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    
+      
+      
+      
+      
+      <div className='container'>
+      <div className="header  m-auto mb-3 ">
+        <Header></Header>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="main row">
+        <hr />
+        <div className="home-container col-md-8">
+          <Home></Home>
+        </div>
+        <div className="sideCart col-md-4 mb-4">
+          <SideCart></SideCart>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
+      
+      
+      
+      
+     
+    
+
+  
   )
 }
 
