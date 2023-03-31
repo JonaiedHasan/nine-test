@@ -5,13 +5,22 @@ import Header from './component/Header/Header';
 import Home from './component/Home/Home';
 import SideCart from './component/SideCart/SideCart';
 function App() {
-  const [count, setCount] = useState(0)
+  const [readTime,setReadTime] = useState(0)
+  const handelReadTime = (time) =>{
+    const prevoiusTime = JSON.parse(localStorage.getItem("readTime"));
+    if(prevoiusTime){
+      const total = prevoiusTime + time;
+      localStorage.setItem("readTime",total)
+      setReadTime(total);
+    }
+    else{
+      localStorage.setItem("readTime",time);
+      setReadTime(time)
+    }
+  }
 
+     
   return (
-    
-      
-      
-      
       
       <div className='container'>
       <div className="header  m-auto mb-3 ">
@@ -20,10 +29,10 @@ function App() {
       <div className="main row">
         <hr />
         <div className="home-container col-md-8">
-          <Home></Home>
+          <Home handelReadTime={handelReadTime}></Home>
         </div>
         <div className="sideCart col-md-4 mb-4">
-          <SideCart></SideCart>
+          <SideCart ReadTime={readTime}></SideCart>
         </div>
       </div>
     </div>

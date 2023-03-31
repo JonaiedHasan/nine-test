@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-const SideCart = () => {
+const SideCart = (props) => {
+console.log(props.ReadTime)
+const {ReadTime}=props
+  const[readTime,setReadTime]=useState(ReadTime) ; 
+  
+    useEffect(()=>{
+        const totalReadTime = localStorage.getItem('readTime');
+       setReadTime(totalReadTime);
+    },[ReadTime])
     return (
         <div>
             <div className='text-center border border-primary border-2 bg-white rounded p-3 bg-primary-subtle mt-2'>
-                <h3 className='fw-bolder text-primary'>Spent time on read : 177 min</h3>
+                <h3 className='fw-bolder text-primary'>Spent time on read : {readTime} min</h3>
             </div>
             <div className="bg-info p-3">
             <h3 className='fw-bold'>Bookmarked Blogs : 8</h3>

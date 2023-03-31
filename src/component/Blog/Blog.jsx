@@ -1,7 +1,10 @@
 import React from 'react';
 import './Blog.css'
-const Blog = ({blog}) => {
-    console.log(blog)
+  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faBookmark } from '@fortawesome/free-solid-svg-icons'
+
+
+const Blog = ({blog,handelReadTime}) => {
     const{Coverpicture,authorpicture,authorname,title,readtime
     }=blog
     return (
@@ -20,7 +23,9 @@ const Blog = ({blog}) => {
                 </div>
             </div>
             <div>
-              <p>{readtime } min read</p>
+              <p>{readtime} min read 
+               <FontAwesomeIcon icon={faBookmark} />
+              </p>
             </div>
         </div>
         <h2 className='fw-bold'>{title}</h2>
@@ -28,7 +33,7 @@ const Blog = ({blog}) => {
         <p>#beginners</p>
         <p>#programming</p>
       </div>
-        <a href="./df">Mark as read</a>
+        <a onClick={()=>{ handelReadTime(readtime)}} href="##">Mark as read</a>
         <hr className='mt-4' />
       </div>
     );
