@@ -4,7 +4,7 @@ import './Blog.css'
   import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 
-const Blog = ({blog,handelReadTime}) => {
+const Blog = ({blog,handelReadTime,handelBlog}) => {
     const{Coverpicture,authorpicture,authorname,title,readtime
     }=blog
     return (
@@ -24,7 +24,7 @@ const Blog = ({blog,handelReadTime}) => {
             </div>
             <div>
               <p>{readtime} min read 
-               <FontAwesomeIcon icon={faBookmark} />
+               <FontAwesomeIcon icon={faBookmark}  onClick={()=>{handelBlog(title)}}/>
               </p>
             </div>
         </div>

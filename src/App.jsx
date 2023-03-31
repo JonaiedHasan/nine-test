@@ -5,7 +5,8 @@ import Header from './component/Header/Header';
 import Home from './component/Home/Home';
 import SideCart from './component/SideCart/SideCart';
 function App() {
-  const [readTime,setReadTime] = useState(0)
+  const [readTime,setReadTime] = useState(0);
+  
   const handelReadTime = (time) =>{
     const prevoiusTime = JSON.parse(localStorage.getItem("readTime"));
     if(prevoiusTime){
@@ -17,6 +18,13 @@ function App() {
       localStorage.setItem("readTime",time);
       setReadTime(time)
     }
+  };
+
+   const [Title,setTitle] = useState([]);
+   const handelBlog = (title) =>{
+     setTitle(title);
+     const newTitle = [...Title,title]
+     setTitle(newTitle);
   }
 
      
@@ -29,10 +37,13 @@ function App() {
       <div className="main row">
         <hr />
         <div className="home-container col-md-8">
-          <Home handelReadTime={handelReadTime}></Home>
+          <Home handelReadTime={handelReadTime}
+           handelBlog={handelBlog}
+          ></Home>
         </div>
         <div className="sideCart col-md-4 mb-4">
-          <SideCart ReadTime={readTime}></SideCart>
+          <SideCart ReadTime={readTime}
+          Title={Title}></SideCart>
         </div>
       </div>
     </div>
