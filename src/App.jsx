@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './component/Header/Header';
 import Home from './component/Home/Home';
 import SideCart from './component/SideCart/SideCart';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   const [readTime,setReadTime] = useState(0);
   
@@ -21,10 +23,23 @@ function App() {
   };
 
    const [Title,setTitle] = useState([]);
-   const handelBlog = (title) =>{
+ const handelBlog = (title) =>{
      setTitle(title);
-     const newTitle = [...Title,title]
+
+     const newTitle = Title.find(pd => pd === title);
+     if(newTitle){
+      
+      toast("You Have Already Bookmarked This Blog")
+      const newTitle = [...Title,title]
+      setTitle(newTitle);
+     }
+     else{
+      console.log('nay')
+      const newTitle = [...Title,title]
      setTitle(newTitle);
+     }
+
+
   }
 
      
@@ -44,18 +59,15 @@ function App() {
         <div className="sideCart col-md-4 mb-4">
           <SideCart ReadTime={readTime}
           Title={Title}></SideCart>
+          <ToastContainer></ToastContainer>
         </div>
       </div>
     </div>
-      
-      
-      
-      
-     
     
-
   
   )
 }
 
 export default App
+
+

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './SideCart.css'
 const SideCart = (props) => {
-console.log(props)
+// console.log(props)
 const {ReadTime,Title}=props;
 // console.log(Title)
   const[readTime,setReadTime]=useState(ReadTime) ; 
@@ -21,9 +21,7 @@ const {ReadTime,Title}=props;
                 Title.map(title => 
                     <div className='p-3 bg-white my-3 rounded'>
                 <h5>{title}</h5>
-            </div>
-                    
-                    )
+            </div>)
             }
             
             </div>

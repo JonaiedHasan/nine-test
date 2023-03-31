@@ -23,7 +23,7 @@ const Blog = ({blog,handelReadTime,handelBlog}) => {
                 </div>
             </div>
             <div>
-              <p>{readtime} min read 
+              <p>{readtime} min read &nbsp;
                <FontAwesomeIcon icon={faBookmark}  onClick={()=>{handelBlog(title)}}/>
               </p>
             </div>
