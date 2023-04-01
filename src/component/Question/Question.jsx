@@ -15,7 +15,7 @@ const Question = () => {
         aria-controls="example-collapse-text"
         aria-expanded={open}
       >
-        1:What the difference between props and  state
+        1:What the difference between props and  state?
       </h2>
      </div>
       <Collapse in={open}>
@@ -56,13 +56,13 @@ const Question = () => {
         aria-controls="example-collapse-text"
         aria-expanded={open3}
       >
-       3:What is the Purpose of useEffect other than fetching data.
+       3:What is the Purpose of useEffect other than fetching data?
       </h2>
      </div>
       <Collapse in={open3}>
         <div className='ans  border border-primary mt-1 rounded p-2' id="example-collapse-text">
           <h4>
-          The purpose of useEffect other than fetching data is manipulating the DOM,handling side effects in general,
+          The purpose of useEffect other than fetching data is manipulating the DOM,handling side effects in general.
           </h4>
         </div>
       </Collapse>
