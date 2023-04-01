@@ -6,6 +6,7 @@ import Home from './component/Home/Home';
 import SideCart from './component/SideCart/SideCart';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Question from './component/Question/Question';
 function App() {
   const [readTime,setReadTime] = useState(0);
   
@@ -21,14 +22,12 @@ function App() {
       setReadTime(time)
     }
   };
-
    const [Title,setTitle] = useState([]);
  const handelBlog = (title) =>{
      setTitle(title);
 
      const newTitle = Title.find(pd => pd === title);
      if(newTitle){
-      
       toast("You Have Already Bookmarked This Blog")
       const newTitle = [...Title,title]
       setTitle(newTitle);
@@ -61,6 +60,9 @@ function App() {
           Title={Title}></SideCart>
           <ToastContainer></ToastContainer>
         </div>
+      </div>
+      <div className="header  m-auto mb-5">
+        <Question></Question>
       </div>
     </div>
     

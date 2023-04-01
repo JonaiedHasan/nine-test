@@ -5,8 +5,7 @@ import './Blog.css'
 
 
 const Blog = ({blog,handelReadTime,handelBlog}) => {
-    const{Coverpicture,authorpicture,authorname,title,readtime
-    }=blog
+    const{Coverpicture,authorpicture,authorname,title,readtime}=blog
     return (
         <div className="blog-card p-2 mb-2   w-100 col-md-6 p-0">
         <div className="blog-poster w-100 m-auto mb-3">
