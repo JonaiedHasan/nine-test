@@ -5,6 +5,7 @@ const Question = () => {
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
+  const [open4, setOpen4] = useState(false);
   return (
     <div>
       <>
@@ -66,7 +67,25 @@ const Question = () => {
         </div>
       </Collapse>
     </>
-   
+    <br />
+      <>
+     <div className='question  ps-4 border border-primary border-2  rounded p-2  mt-1 w-75 '>
+     <h2 className='fw-bolder'
+        onClick={() => setOpen4(!open4)}
+        aria-controls="example-collapse-text"
+        aria-expanded={open4}
+      >
+       4.How Does React work?
+      </h2>
+     </div>
+      <Collapse in={open4}>
+        <div className='ans  border border-primary mt-1 rounded p-2' id="example-collapse-text">
+          <h4>
+          React is a JavaScript library for building user interfaces. It works by allowing developers to define components that represent parts of the UI, which can be composed together to build complex UIs. React automatically re-renders components and updates the DOM when a component's state changes. It also provides lifecycle methods to control component behavior, and can be used with other tools and frameworks to build full-featured applications.
+          </h4>
+        </div>
+      </Collapse>
+    </>
     
       
     </div>
