@@ -4,6 +4,7 @@ import "./Question.css"
 const Question = () => {
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
+  const [open3, setOpen3] = useState(false);
   return (
     <div>
       <>
@@ -46,7 +47,26 @@ const Question = () => {
         </div>
       </Collapse>
     </>
-  
+    <br />
+      <>
+     <div className='question ps-4 border border-primary border-2  rounded p-2  mt-1 w-75 '>
+     <h2 className='fw-bolder'
+        onClick={() => setOpen3(!open3)}
+        aria-controls="example-collapse-text"
+        aria-expanded={open3}
+      >
+       3:What is the Purpose of useEffect other than fetching data.
+      </h2>
+     </div>
+      <Collapse in={open3}>
+        <div className='ans  border border-primary mt-1 rounded p-2' id="example-collapse-text">
+          <h4>
+          The purpose of useEffect other than fetching data is manipulating the DOM,handling side effects in general,
+          </h4>
+        </div>
+      </Collapse>
+    </>
+   
     
       
     </div>
